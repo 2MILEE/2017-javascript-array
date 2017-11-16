@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript">
+        function minimum_cost(houses) {
+          var result = 0;
+          // TODO : 여기에 여러분이 직접 코딩을 해주세요.
+          return result;
+        }
+        var test_case_01 = [[26, 40, 83], [49, 60, 57], [13, 89, 99]];
+        var test_case_02 = [[1, 20, 30], [50, 5, 6], [9, 3, 7]];
+        var test_case_03 = [[100, 1, 100], [999, 1, 999]];
+        var test_case_04 = [[100, 100, 100], [100, 100, 100], [100, 100, 100], [100, 100, 100], [100, 100, 100]];
+        var test_case_05 = [[1, 2, 3], [4, 5, 6], [7, 8, 9], [10, 11, 12], [13, 14, 15], [16, 17, 18]];
+        var test_case_06 = [[26, 40, 83], [0, 60, 57], [0, 0, 0]];
+        var test_case_07 = [[0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0], [20, 100, 10]];
+
+        expect(minimum_cost(test_case_01), 96);
+        expect(minimum_cost(test_case_02), 10);
+        expect(minimum_cost(test_case_03), 101);
+        expect(minimum_cost(test_case_04), 500);
+        expect(minimum_cost(test_case_05), 54);
+        expect(minimum_cost(test_case_06), 40);
+        expect(minimum_cost(test_case_07), 10);
+
+        function expect(l, r) {
+            if (l === r)
+                console.log('pass');
+            else
+                console.log('fail');
+        }
+
+    </script>
+</head>
+<body>
+</body>
+</html>

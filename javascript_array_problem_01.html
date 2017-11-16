@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript">
+        function calculate(arr) {
+          var result = 0;
+          // TODO : 여기에 여러분이 직접 코딩을 해주세요.       
+          return result;
+        }
+
+        expect(calculate([1, '+', 2]), 3);
+        expect(calculate([1, '-', 2]), -1);
+        expect(calculate([1, '*', 2]), 2);
+        expect(calculate([1, '+', 2, '+', 3]), 6);
+        expect(calculate([1, '*', 2, '+', 3, '*', 10]), 50);
+        expect(calculate([10, '-', 10, '*', 3, '+', 10, '-', 10]), 0);
+        expect(calculate([5, '*', 5, '*', 10, '+', 100, '-', 300]), 50);
+
+        function expect(l, r) {
+            if (l === r)
+                console.log('pass');
+            else
+                console.log('fail');
+        }
+    </script>
+</head>
+<body>
+</body>
+</html>
