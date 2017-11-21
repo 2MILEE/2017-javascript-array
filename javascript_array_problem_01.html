@@ -1,13 +1,26 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
     <script type="text/javascript">
         function calculate(arr) {
           var result = 0;
-          // TODO : 여기에 여러분이 직접 코딩을 해주세요.       
+          // TODO : 여기에 여러분이 직접 코딩을 해주세요.  
+	result = array[0];
+             for (var i = 1; i < array.length; i+=2) // i를 배열의 길이까지 돌리는데 i는 2씩증가
+	 {
+                  switch(array[i])//스위치를 돌리는데 
+		{
+                     case '+' : result += array[i+1]; //case가 +면 +하고
+                                break;
+                     case '-' : result -= array[i+1]; //case가 -면 -
+                                break;
+                     case '*' : result *= array[i+1]; //case가 *면 *를 한다.
+                                break;
+             	 }
+              }     
           return result;
         }
-
+	//과제가 너무 어려워서 친구의 도움으로 풀었습니다. 
         expect(calculate([1, '+', 2]), 3);
         expect(calculate([1, '-', 2]), -1);
         expect(calculate([1, '*', 2]), 2);
